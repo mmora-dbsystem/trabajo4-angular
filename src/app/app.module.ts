@@ -9,6 +9,8 @@ import { CLoguinComponent } from './components/c-loguin/c-loguin.component';
 import { CNavComponent } from './components/c-nav/c-nav.component';
 import { CContentComponent } from './components/c-content/c-content.component';
 import { CPageComponent } from './components/c-page/c-page.component';
+import { PIndexComponent } from './pages/p-index/p-index.component';
+import { PDashboardComponent } from './pages/p-dashboard/p-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CPageComponent } from './components/c-page/c-page.component';
     CLoguinComponent,
     CNavComponent,
     CContentComponent,
-    CPageComponent
+    CPageComponent,
+    PIndexComponent,
+    PDashboardComponent
   ],
   imports: [
     BrowserModule,
