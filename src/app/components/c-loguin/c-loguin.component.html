@@ -1,31 +1,40 @@
-<section class="sec-loguin container">
-    <article class="art-loguin row row-cols-6">
-        <div class="col-12">
-            <br>
-        </div>
-        <div class="col-loguin col"> </div>
-        <div class="col-loguin col-3">Logo</div>
-        <div class="col-loguin col-1"> </div>
-        <div class="col-loguin col">Usuario: </div>
-        <div class="col-loguin col">TB Usuario</div>
-        <div class="col-loguin col"> </div>
-        <div class="col-loguin col"> </div>
-        <div class="col-loguin col-3">Logo</div>
-        <div class="col-loguin col-1"> </div>
-        <div class="col-loguin col">Calve: </div>
-        <div class="col-loguin col">TB Clave</div>
-        <div class="col-loguin col"> </div>
-        <div class="col-loguin col-12">
-            <br>
-        </div>
-        <div class="col-loguin col"> </div>
-        <div class="col-loguin col-3"> </div>
-        <div class="col-loguin col-1"> </div>
-        <div class="col-loguin col">B Loguin</div>
-        <div class="col-loguin col"> </div>
-        <div class="col-loguin col"> </div>
-        <div class="col-loguin col-12">
-            <br>
-        </div>
+<section class="sec-loguin container-fluid">
+    <article class="art-loguin row row-cols-2">
+        <content class="con-loguin-left row row-cols-3">
+            <div class="loguin-lef-space col-3"></div>
+            <div class="loguin-lef-image col-6">
+                <img class="img-loguin img-fluid" src="../../../assets/images/img-bg.png" alt="BG">
+            </div>
+            <div class="loguin-lef-space col-3"></div>
+        </content>
+        <content class="con-loguin-right row row-cols-3">
+            <div class="loguin-right-space col-3"></div>
+            <div class="loguin-right-sesion col-6">
+                <div class="loguin-right-sesion-messageloguin" *ngIf="auth.user | async as user; else showLogin">
+                    <h2>
+                        Bienvenido
+                    </h2>
+                    <h3>
+                        {{ user.displayName }}!
+                    </h3>
+                    <br>
+                    <button class="loguin-right-sesion-buttomlogout btn btn-primary" onclick="window.location.href='dashboard'">Continuar</button>
+                    <br>
+                    <br>
+                    <button class="loguin-right-sesion-buttomlogout btn btn-primary" (click)="logout()">Salir</button>
+                  </div>
+                <ng-template #showLogin>
+                    <h3>
+                        <br>
+                        <br>
+                        Por favor, inicia sesion:
+                        <br>
+                        <br>
+                    </h3>
+                    <button class="loguin-right-sesion-buttomloguin btn btn-primary" (click)="login()">Inicio de sesion con Google</button>
+                </ng-template>
+            </div>
+            <div class="loguin-right-space col-3"></div>
+        </content>
     </article>
 </section>

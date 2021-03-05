@@ -11,6 +11,10 @@ import { CContentComponent } from './components/c-content/c-content.component';
 import { CPageComponent } from './components/c-page/c-page.component';
 import { PIndexComponent } from './pages/p-index/p-index.component';
 import { PDashboardComponent } from './pages/p-dashboard/p-dashboard.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { CListComponent } from './components/c-list/c-list.component';
+import { CConstructionComponent } from './components/c-construction/c-construction.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,14 @@ import { PDashboardComponent } from './pages/p-dashboard/p-dashboard.component';
     CContentComponent,
     CPageComponent,
     PIndexComponent,
-    PDashboardComponent
+    PDashboardComponent,
+    CListComponent,
+    CConstructionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent]

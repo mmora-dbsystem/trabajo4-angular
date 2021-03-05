@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dbsystem-inventario": {
+      "hosting": {
+        "inventario": [
+          "dbsystem-inventario"
+        ]
+      }
+    }
+  }
+}

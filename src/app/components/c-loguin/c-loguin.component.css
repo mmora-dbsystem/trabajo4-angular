@@ -1,9 +1,42 @@
-.art-loguin
+.sec-loguin
 {
     background-color: white;
-    border-style:ridge;
-}
-.col-loguin
-{
     border-style: ridge;
+    padding: 2em;
+    padding-left: 2em;
+}
+
+.loguin-right-sesion h3
+{
+    text-align: center;
+}
+
+.loguin-right-sesion-buttomloguin
+{
+    width: 100%;
+}
+
+.loguin-right-sesion-messageloguin
+{
+    text-align: center;
+}
+
+.loguin-right-sesion-buttomlogout
+{
+    width: 100%;
+}
+
+.loguin-right-sesion-buttomlogout-a
+{
+    color:white;
+}
+
+.loguin-right-sesion-buttomlogout-a:hover
+{
+    color:white;
+}
+
+.loguin-right-sesion-buttomlogout-a:active
+{
+    color:white;
 }

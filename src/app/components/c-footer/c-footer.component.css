@@ -1,0 +1,31 @@
+.sec-footer
+{
+    background-color:#123274;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.col-footer-social-network
+{
+    text-align: center;
+}
+
+.col-footer-copyrigth
+{
+    text-align: center;
+}
+
+.sec-footer a
+{
+    color: white;
+}
+
+.sec-footer a:hover
+{
+    color: rgba(70, 61, 61, 0.781);
+}
+
+.sec-footer a:visited
+{
+    color: white;
+}
